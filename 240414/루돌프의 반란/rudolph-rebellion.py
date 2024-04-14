@@ -38,10 +38,10 @@ def rudolph_move():
             continue
         #산타와의거리
         distance = ((r_x - x) ** 2) + ((r_y - y) ** 2)
-        heappush(r_s_distance, [distance, -x, -y, i])
-        # r_s_distance.append([distance, -x, -y, i])
+        # heappush(r_s_distance, [distance, -x, -y, i])
+        r_s_distance.append([distance, -x, -y, i])
     
-    # r_s_distance.sort()
+    r_s_distance.sort()
 
 
     index = r_s_distance[0][3]
